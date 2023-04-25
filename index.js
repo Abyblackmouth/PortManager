@@ -1,9 +1,7 @@
 const mongoose = require("mongoose")
+require('dotenv').config()
 
-const DB_USER = ''
-const DB_PASSWORD = ''
-const DB_NAME = ''
-const DB_HOST = ''
+const {DB_USER, DB_PASSWORD, DB_NAME, DB_HOST} = process.env
 
 const URL = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
 
