@@ -1,10 +1,7 @@
 const mongoose = require("mongoose")
+require('dotenv').config()
 
-
-const DB_USER = 'Abraham'
-const DB_PASSWORD = 'Abraham32'
-const DB_NAME = 'PortManager'
-const DB_HOST = 'atlascluster.qpaiavk.mongodb.net'
+const {DB_USER, DB_PASSWORD, DB_NAME, DB_HOST} = process.env
 
 const URL = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
 
