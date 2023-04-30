@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
-const clientesShema = new mongoose.Schema({
+const clientesSchema = new mongoose.Schema({
     credito: {
         type: String,
         required: true,
